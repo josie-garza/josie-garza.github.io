@@ -13,6 +13,28 @@ body, html {
     margin: 0;
 }
 
+.bgimg-1 {
+  background-image: url("img_parallax.jpg");
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
 .bg {
     /* The image used */
     background-image: url("DSC00694.JPG");
@@ -69,5 +91,26 @@ body, html {
     </div>
 
     <div class="bg"></div>
+
+    <div class="bgimg-1">
+      <div class="caption">
+        <span class="border">JOSIE GARZA</span><br>
+        <span class="border">WELCOME TO MY WEBSITE!</span>
+      </div>
+    </div>
+
+    <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("topnav").style.top = "0";
+      } else {
+        document.getElementById("topnav").style.top = "-50px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
   </body>
 </html>
