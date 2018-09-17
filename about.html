@@ -77,6 +77,38 @@
         background-color: #ddd;
         color: black;
       }
+      .split {
+          height: 100%;
+          width: 50%;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          overflow-x: hidden;
+          padding-top: 20px;
+      }
+
+      .left {
+          left: 0;
+          background-color: white;
+      }
+
+      .right {
+          right: 0;
+          background-color: #111;
+      }
+
+      .centered {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+      }
+
+      .centered img {
+          width: 150px;
+          border-radius: 50%;
+      }
     </style>
 
   </head>
@@ -89,17 +121,24 @@
       <a href="projects.html">Projects</a>
       <a class="active" href="about.html">About</a>
     </div>
-    <p>&nbsp</p>
-    <img src="profile.jpg" width=300px height=300px />
-    <h2><font color="blue">About Me</font></h2>
-    <h3><font color="green"><strong>San Antonio, Texas</strong></font></h3>
-    <p>Hello. My name is Josie Garza. Welcome to my personal website!</p>
+
+    <div class="split left">
+  <div class="centered">
+    <img src="profile.jpg" width=300px height=300px >
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
     <ul>
+      <li>From San Antonio, Texas.
       <li>Sophomore in Computer Science at Rice University.</li>
       <li>I currently work at Rice University as a Digital Learning Assistant and develop courses in Canvas.</li>
       <li>I am on a design team that is utilizing video analysis to monitor traffic at an intersection close to campus to make it safer for pedestrians and cyclists.</li>
       <li>I am interested in quality assurance, design, and software engineering.</li>
       <li>My career goals include utilizing my technical, creative, and interpersonal skills to create and design products that will benefit society.</li>
     </ul>
+  </div>
+</div>
   </body>
 </html>
