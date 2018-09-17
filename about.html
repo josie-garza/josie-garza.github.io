@@ -77,13 +77,14 @@
         background-color: #ddd;
         color: black;
       }
+
       .split {
-          height: 100%;
+          height: auto;
           width: 50%;
           position: fixed;
           z-index: 1;
           top: 0;
-          overflow-x: hidden;
+          overflow-x: visible;
           padding-top: 20px;
       }
 
@@ -103,12 +104,12 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          text-align: center;
+          text-align: left;
       }
 
       .centered img {
-          width: 300px;
-          height: 300px;
+          width: 400px;
+          height: 400px;
           border-radius: 50%;
       }
     </style>
@@ -125,12 +126,12 @@
 
     <div class="split left">
   <div class="centered">
-    <img src="profile.jpg" width=400px height=400px >
+    <img src="profile.jpg">
   </div>
 </div>
 
 <div class="split right">
-  <div margin-left: 100px font-size: 17px>
+  <div class="centered">
     <ul>
       <li>From San Antonio, Texas.</li>
       <li>Sophomore in Computer Science at Rice University.</li>
