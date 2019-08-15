@@ -14,16 +14,17 @@ ul{width: fit-content; margin: auto; list-style: none;}
 
 ul li{float: left; margin-right: 30px;}
 
-ul li a{color: #fff; text-decoration: none;}
-
 a { color: inherit; text-decoration: none;}
 a:hover {text-decoration: underline; font-size:17px;}
 
-h1{color: #fff; text-align: center; font-size: 35px; margin-top: 90px; font-weight: bold; letter-spacing: 1px;}
-p{color: #fff;}
+h1{text-align: center; font-size: 35px; margin-top: 90px; font-weight: bold; letter-spacing: 1px;}
+
+h3{margin-bottom: 7px}
+h4{opacity: 0.6; margin-bottom: 7px;}
+h5{opacity: 0.4; margin-bottom: 7px;}
 
 hr {
-        border: 1px solid white;
+        border: 1px solid;
         margin-top: 15px;
         width: 90%;
         margin-left: auto;
@@ -32,7 +33,9 @@ hr {
         opacity: 0.5;
 }
 
-img {
+img{margin: 20px 40px 20px 0 ;}
+
+.profile {
         width: 375px;
         height: 375px;
         border-radius: 50%;
