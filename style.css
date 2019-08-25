@@ -5,7 +5,7 @@ section{width: 100%; height: 580px; float: left;}
 #home{background: #61A4D6;}
 #about{background: #61D6A3;}
 #experience{background: #A8D661;}
-#projects{background: #D6CF61;}
+#projects{background: #F7F783;}
 #connect{background: #D69C61;}
 
 nav{width: 100%; position: fixed; z-index: 1; top: 40px;}
@@ -33,7 +33,29 @@ hr {
         opacity: 0.5;
 }
 
-img{margin: 20px 40px 20px 0 ;}
+img {
+        margin: 20px 40px 20px 0 ;
+}
+
+.about {
+        margin: 0px 225px 0px 225px;
+}
+
+.space {
+        padding-top: 125px;
+}
+
+.experience {
+        margin: 50px 250px 0px 250px;
+}
+
+.projects {
+        margin: 35px 250px 0px 250px;
+}
+
+.connect {
+        margin: 40px 0px 0px 180px; opacity: 0.6;
+}
 
 .profile {
         width: 375px;
@@ -41,6 +63,23 @@ img{margin: 20px 40px 20px 0 ;}
         border-radius: 50%;
         margin-right: 40px;
         float: left;
+}
+
+.icon {
+        width: 100px;
+        height: 100px;
+}
+
+.kind {
+        float: left;
+        border-radius: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+
+.carpool {
+        float: left;
+        border-radius: 50%;
 }
 
 .caption {
@@ -64,7 +103,77 @@ img{margin: 20px 40px 20px 0 ;}
   font-size: 25px;
   letter-spacing: 6px;
 }
-
 .column-left{ float: left; width: 33.333%; }
 .column-right{ float: right; width: 33.333%; }
 .column-center{ display: inline-block; width: 33.333%; }
+
+@media only screen and (max-width: 600px) {
+  section {
+    height: 600px;
+  }
+  nav {
+    display: none;
+  }
+  img {
+    margin: 0px 0px 0px 0px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-top: 35px;
+  }
+  .about {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+  }
+  .space {
+    padding-top: 20px;
+  }
+  .experience {
+    margin: 40px 2px 0px 20px;
+  }
+  .kind {
+          float: left;
+          border-radius: 50%;
+          margin-top: 0px;
+          margin-bottom: 0px;
+  }
+
+  .carpool {
+          float: left;
+          border-radius: 50%;
+  }
+  .projects {
+    margin: 40px 2px 0px 20px;
+  }
+  .connect {
+    margin: 0px 0px 0px 40px;
+  }
+  .caption {
+    top: 35%;
+  }
+  .caption span.border {
+    padding: 18px;
+    font-size:25px;
+    letter-spacing: 6px;
+  }
+  .caption span.sub {
+    font-size: 15px;
+    letter-spacing: 3.6px;
+  }
+  .profile {
+    width: 200px;
+    height: 200px;
+    margin: 0px auto 0px;
+    display: block;
+    float: none;
+  }
+  .icon {
+    width: 70px;
+    height: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .column-left{ width: 100%; margin-bottom: 10px;}
+  .column-right{ width: 100%; margin-bottom: 10px;}
+  .column-center{ width: 100%; margin-bottom: 10px;}
+}
