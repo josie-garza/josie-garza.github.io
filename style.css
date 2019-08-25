@@ -176,4 +176,7 @@ img {
   .column-left{ width: 100%; margin-bottom: 10px;}
   .column-right{ width: 100%; margin-bottom: 10px;}
   .column-center{ width: 100%; margin-bottom: 10px;}
+  .contact {
+          height: 200px;
+  }
 }
